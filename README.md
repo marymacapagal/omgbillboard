@@ -11,7 +11,7 @@ Just call OMGBillboard on a container with img elements like so:
 ```javascript
 	$("#container").OMGBillboard();
 ```
-The plugin will grab all <img> inside #container and put them on a rotating slideshow.
+The plugin will grab all `<img>` inside `#container` and put them on a rotating slideshow.
 
 
 ###Available settings
