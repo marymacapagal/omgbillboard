@@ -1,6 +1,7 @@
 #OMGBillboard
 
 jQuery plugin for adding the old, blinds billboard effect to a set of images.
+(You can see a working demo here: http://labs.marymacapagal.com/omgbillboard/)
 
 ##Licensing
 Same license as jQuery (MIT). In a nutshell: you can use this plugin for free for any purpose you want. If it causes you any grief or damage, I'm not liable. (https://github.com/marymacapagal/omgbillboard/blob/master/MIT-License.txt)
