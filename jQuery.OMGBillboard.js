@@ -1,3 +1,8 @@
+/* jQuery OMGBillboard Plugin
+   Coded and ridiculously named by Mary Macapagal
+   (c) 2013, Licensed under the MIT license https://github.com/marymacapagal/omgbillboard/blob/master/MIT-License.txt
+*/
+
 (function($) {
 	"use strict";
 	jQuery.fx.interval = 50;
@@ -13,8 +18,7 @@
 			'bgColor': '#000'
 			},
 			settings = $.extend({}, defaults, options);
-	
-	
+		
 		return this.each(function() {
 			
 			var $container = $(this),
@@ -59,8 +63,7 @@
 					'background-position': -idx*sliceWidth,
 					'background-image': 'url('+images[imgIdx]+')'
 				});
-			});
-			
+			});	
 
 			function rotate(speed) {
 				$slices.each(function() {
@@ -102,4 +105,3 @@
 	};
 	
 })(jQuery);
-
