@@ -9,8 +9,8 @@
 	$.fn.OMGBillboard = function(options) {
 	
 		var defaults = {
-			'imgWidth': 600,
-			'imgHeight': 400,
+			'imgWidth': 0,
+			'imgHeight': 0,
 			'numSlices': 10,
 			'sliceClass': 'slice',
 			'rotateSpeed': 500,
@@ -21,8 +21,13 @@
 		
 		return this.each(function() {
 			
-			var $container = $(this),
-				images = [],
+			var $container = $(this);
+			
+			//if imgWidth and imgHeight are not defined, get the container's dimensions
+			if ( ! (settings.imgWidth > 0) ) settings.imgWidth = $container.width();
+			if ( ! (settings.imgHeight > 0) ) settings.imgHeight = $container.height();
+			
+			var	images = [],
 				imgIdx = 0,
 				sliceWidth = (settings.imgWidth/settings.numSlices) - 1;
 				
