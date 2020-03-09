@@ -61,7 +61,8 @@
 				'width': sliceWidth,
 				'max-width': sliceWidth,
 				'background':'transparent no-repeat top left',
-				'border-left':'1px solid '+settings.bgColor
+				'border-left':'1px solid '+settings.bgColor,
+				'background-size' : 'cover'
 			});
 			$slices.each(function(idx) {
 				$(this).css({
